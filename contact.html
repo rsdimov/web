@@ -68,12 +68,6 @@
         width: 100%;
     }
 	
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 65vh;
-    }
 </style>
 
 </head>
@@ -112,6 +106,14 @@
 
     .form-control {
       width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+	
+	.form-control1 {
+      width: 100%;
       max-width: 400px; /* Adjust the maximum width to your preference */
       padding: 10px;
       font-size: 16px;
@@ -120,7 +122,7 @@
     }
 
     textarea.form-control {
-      resize: vertical;
+      resize: both;
       min-height: 150px; /* Set a minimum height for the textarea */
     }
 
@@ -145,32 +147,29 @@
       height: 400px; /* Set a fixed height for the form container */
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
     }
   </style>
-  <center>
-    <h1 style="font-family: Arial; font-size: 45px;">Contact Us</h1>
-    <br><br>
+    <center><br><h1 style="font-family: Arial; font-size: 45px;">Contact Us</h1>
+    <br><br></center>
     <div class="form-container">
       <form target="_blank" action="https://formsubmit.co/rsdimov95@gmail.com" method="POST">
         <div class="form-group">
           <div class="form-row">
             <div class="col">
-              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              <input type="text" name="name" class="form-control1" placeholder="Full Name" required>
             </div>
             <div class="col">
-              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              <input type="email" name="email" class="form-control1" placeholder="Email Address" required>
             </div>
           </div>
         </div>
         <div class="form-group">
           <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
         </div>
-        <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+        <center><button type="submit" class="btn btn-lg btn-dark btn-block">Send</button></center>
       </form>
     </div>
-  </center>
 </div>
 
     </main>

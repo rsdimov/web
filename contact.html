@@ -68,6 +68,24 @@
         width: 100%;
     }
 	
+	.book-demo a {
+		padding: 8px 15px;
+		font-family: Arial;
+		font-size: 16px;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: #ff5f5f; /* Change the background color to a vibrant color */
+		color: #fff; /* Change the text color to white */
+		border-radius: 14px; /* Increase the border radius for a more rounded shape */
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+		transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
+	}
+
+	.book-demo a:hover {
+		background-color: #ff4242; /* Change the background color on hover */
+		transform: scale(1.05); /* Apply a slight scale effect on hover */
+		box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increase the box shadow on hover */
+	}
 </style>
 
 </head>
@@ -77,11 +95,13 @@
             <ul>
                 <li><a href="index.html" style="font-family: Arial; font-size: 17px;">HOME</a></li>
                 <li><a href="about.html" style="font-family: Arial; font-size: 17px;">ABOUT</a></li>
+				<li><a href="#" style="font-family: Arial; font-size: 17px;" class="active">CONTACT</a></li>
             </ul>
             <a href="index.html" style="text-decoration: none; color: #fff;"><h1 style="font-family: Arial; font-size: 37px; letter-spacing: 4px;">EVASIVE PROJECT</h1></a>
             <ul>
-                <li><a href="tools.html" style="font-family: Arial; font-size: 17px;">TOOLS</a></li>
-                <li><a href="#" style="font-family: Arial; font-size: 17px;" class="active">CONTACT</a></li>
+                <li><a href="features.html" style="font-family: Arial; font-size: 17px;">FEATURES</a></li>
+				<li><a href="screenshots.html" style="font-family: Arial; font-size: 17px;">SCREENSHOTS</a></li>
+                <li class="book-demo"><a href="contact.html" style="font-family: Arial; font-size: 17px;">BOOK A DEMO</a></li>
             </ul>
         </nav>
     </header>

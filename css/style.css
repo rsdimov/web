@@ -1,45 +1,49 @@
 @charset "utf-8";
 @media (max-width: 1481px){
 }
-    body, h1, p, ul {
-        margin: 0;
-        padding: 0;
-    }
+ body, h1, p, ul {
+	margin: 0;
+	padding: 0;
+}
+	
+h1 {
+	margin-right: 80px;
+	margin-left: 80px;
+}
     
-    /* Header Styles */
-    header {
-        background-color: #151515;
-        color: #fff;
-        padding: 16px;
+/* Header Styles */
+header {
+	background-color: #151515;
+	color: #fff;
+	padding: 16px;
 	position: fixed;
 	width: 100%;
-    }
+}
     
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-weight: bold;
-        padding: 0 15%;
-    }
+}
     
-    nav ul {
-        list-style-type: none;
-        display: flex;
-    }
+nav ul {
+	list-style-type: none;
+	display: flex;
+}
     
-    nav ul li {
-        margin-right: 10px;
-    }
+nav ul li {
+	margin-right: 10px;
+}
     
-    nav ul li a {
+nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 5px;
 	position: relative;
-    }
+}
 
-    nav ul li a::before {
+nav ul li a::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -48,27 +52,27 @@
 	height: 2px;
 	background-color: #fff;
 	transition: width 0.3s ease;
-    }
+}
 
-    nav ul li a:hover::before {
+nav ul li a:hover::before {
 	width: 100%;
-    }
+}
 
-    nav ul li a.active {
-        position: relative;
-    }
+nav ul li a.active {
+	position: relative;
+}
 
-    nav ul li a.active::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        height: 2px;
-        background-color: #fff;
-    }
+nav ul li a.active::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+}
 	
-    .book-demo a {
+.book-demo a {
 	padding: 8px 12px;
 	font-family: Arial;
 	font-weight: bold;
@@ -78,150 +82,150 @@
 	border-radius: 14px; /* Increase the border radius for a more rounded shape */
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 	transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
-    }
+}
 
-    .book-demo a:hover {
+.book-demo a:hover {
 	background-color: #f50000; /* Change the background color on hover */
 	transform: scale(1.05); /* Apply a slight scale effect on hover */
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increase the box shadow on hover */
-    }
+}
     
-    nav ul li.book-demo a {
-        text-decoration: none;
-        position: relative;
-    }
+nav ul li.book-demo a {
+	text-decoration: none;
+	position: relative;
+}
 
-    nav ul li.book-demo a::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 0;
-        height: 2px;
-        background-color: transparent;
-        transition: width 0.3s ease;
-    }
+nav ul li.book-demo a::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: transparent;
+	transition: width 0.3s ease;
+}
 
-    nav ul li.book-demo a:hover::before {
-        width: 0;
-    }
+nav ul li.book-demo a:hover::before {
+	width: 0;
+}
 
-    /* Body Styles */
-    body.index-page main {
-        padding: 20px;
-        background-image: url('../img/background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-        min-height: calc(80vh);
-    }
+/* Body Styles */
+body.index-page main {
+	padding: 20px;
+	background-image: url('../img/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	min-height: calc(80vh);
+}
 	
-    main {
-        display: flex;
-        justify-content: center;
-    }
+main {
+	display: flex;
+	justify-content: center;
+}
 	
-    .content {
-        display: flex;
-        align-items: center;
+.content {
+	display: flex;
+	align-items: center;
 	text-align: left;
-    }
+}
 
-    .text {
-        margin-right: 20px;
-    }
+.text {
+	margin-right: 20px;
+}
 
-    .image {
-        flex-shrink: 0;
-    }
+.image {
+	flex-shrink: 0;
+}
 	
-    .btnindex {
-        display: inline-block;
-        padding: 18px 24px;
-        font-family: Arial;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        background-color: #fff;
-        color: #000;
-        border-radius: 10px;
-        letter-spacing: 1px;
-        transition: background-color 0.3s ease;
-    }
+.btnindex {
+	display: inline-block;
+	padding: 18px 24px;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	transition: background-color 0.3s ease;
+}
 
-    .btnindex:hover {
-        background-color: #f1f1f1;
-        color: #000;
-    }
+.btnindex:hover {
+	background-color: #f1f1f1;
+	color: #000;
+}
     
-    .form-group {
-        margin-bottom: 20px;
-    }
+.form-group {
+	margin-bottom: 20px;
+}
 
-    .form-row {
-        margin-bottom: 10px;
-    }
+.form-row {
+	margin-bottom: 10px;
+}
 
-    .col {
-        display: inline-block;
-        margin-right: 5px;
-        width: calc(100% - 2.5px);
-        margin-bottom: 10px;
-    }
+.col {
+	display: inline-block;
+	margin-right: 5px;
+	width: calc(100% - 2.5px);
+	margin-bottom: 10px;
+}
 
-    .form-control {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-    }
+.form-control {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
 	
-    .form-control1 {
-        width: 100%;
-        max-width: 400px; /* Adjust the maximum width to your preference */
-        padding: 10px;
-        font-size: 16px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-    }
+.form-control1 {
+	width: 100%;
+	max-width: 400px; /* Adjust the maximum width to your preference */
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
 
-    textarea.form-control {
-        resize: both;
-        min-height: 150px; /* Set a minimum height for the textarea */
-    }
+textarea.form-control {
+	resize: both;
+	min-height: 150px; /* Set a minimum height for the textarea */
+}
 
-    .btn {
-        display: block;
-        width: 100%;
-        max-width: 160px; /* Adjust the maximum width to your preference */
-        padding: 12px;
-        font-size: 16px;
-        font-weight: bold;
-        border: none;
-        background-color: #343a40;
-        text-decoration: none;
-        color: #fff;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
-    }
+.btn {
+	display: block;
+	width: 100%;
+	max-width: 160px; /* Adjust the maximum width to your preference */
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background-color: #343a40;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
+}
 
-    .btn:hover {
-        background-color: #1a1e21;
-    }
+.btn:hover {
+	background-color: #1a1e21;
+}
 
-    .form-container {
-        height: 400px; /* Set a fixed height for the form container */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.form-container {
+	height: 400px; /* Set a fixed height for the form container */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 	
-    /* Footer Styles */
-    footer {
-        background-color: #151515;
-        color: #fff;
-        padding: 40px;
-        text-align: center;
-    }
+/* Footer Styles */
+footer {
+	background-color: #151515;
+	color: #fff;
+	padding: 40px;
+	text-align: center;
+}
